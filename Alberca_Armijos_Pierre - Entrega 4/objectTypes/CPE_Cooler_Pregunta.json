@@ -1,0 +1,9 @@
+{
+	"name": "CPE_Cooler_Pregunta",
+	"plugin-id": "TextBox",
+	"sid": 150357728394485,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Contador",
+	"plugin-id": "TextBox",
+	"sid": 362000791666257,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

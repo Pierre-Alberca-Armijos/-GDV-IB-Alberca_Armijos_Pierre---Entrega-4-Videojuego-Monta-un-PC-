@@ -1,0 +1,1242 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Puntaje",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 695341205145049
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Start",
+					"sid": 283031638385537
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FondoEnMosaico",
+					"sid": 691121435160447,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Start",
+					"sid": 888160726395661,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Titulo_GAME1",
+					"sid": 330400653713115,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPE_Cooler_Pregunta",
+					"sid": 102278591916150,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_pregunta",
+					"sid": 319450856484747,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentación_Pregunta",
+					"sid": 424189838301474,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gráfica_pregunta",
+					"sid": 567393169441929,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_base_pregunta",
+					"sid": 577704514082788,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Pregunta",
+					"sid": 852954154891381,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Contador",
+					"sid": 486714243629191,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Aciertos",
+					"sid": 333410542306980,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 516627699342489
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 757414833698245
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Contador",
+					"sid": 967892950659935,
+					"parameters": {
+						"text": "\"Puntaje: \" & Puntaje"
+					}
+				}
+			],
+			"sid": 640007845382548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CPU_pregunta",
+					"sid": 645845676723197
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Solucion",
+					"sid": 876260590823390,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 213617991552818
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CPE_Cooler_Pregunta",
+					"sid": 972169977051531
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Cooler_Solucion",
+					"sid": 328585323888067,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 537674335968844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Fuente_Alimentación_Pregunta",
+					"sid": 909812761764301
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentacion_Solucion",
+					"sid": 333858618361924,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 124290860348144
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Gráfica_pregunta",
+					"sid": 826844931182945
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Grafica_Solucion",
+					"sid": 475519889796967,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 631882935083373
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Placa_base_pregunta",
+					"sid": 385610632313639
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_Base_Solucion",
+					"sid": 650987201575011,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 731291828550161
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "RAM_Pregunta",
+					"sid": 216381206997419
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Solucion",
+					"sid": 475535308803966,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 848222318413484
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "CPU_Solucion",
+					"sid": 512757816175031,
+					"parameters": {
+						"text": "\"CPU\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "CPU",
+					"sid": 263659241682845,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 650059010189319
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "CPU_Cooler_Solucion",
+					"sid": 436378321997405,
+					"parameters": {
+						"text": "\"CPU Cooler\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "CPU_Cooler",
+					"sid": 326555944495242,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 736412938898592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "RAM_Solucion",
+					"sid": 961146974208926,
+					"parameters": {
+						"text": "\"RAM\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "RAM",
+					"sid": 389837751334609,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 225489788528514
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Fuente_Alimentacion_Solucion",
+					"sid": 193030461320293,
+					"parameters": {
+						"text": "\"Fuente de Alimentación\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Fuente_Alimentación",
+					"sid": 498625221771980,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 236682679310463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Grafica_Solucion",
+					"sid": 111196080656045,
+					"parameters": {
+						"text": "\"Gráfica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Gráfica",
+					"sid": 939043664706114,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 538682686342027
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Placa_Base_Solucion",
+					"sid": 507096532935579,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Placa_Base",
+					"sid": 450228479201130,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 332913387326943
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Placa_Base",
+					"sid": 366773760615564,
+					"parameters": {
+						"object": "Placa_Base_Placeholder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Placa_Base",
+					"sid": 933014025736540,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Placa_Base_Placeholder",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_Base",
+					"sid": 865810066743000,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_Base_Placeholder",
+					"sid": 621937479858450,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 318454648575824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "CPU",
+					"sid": 745478515095113,
+					"parameters": {
+						"object": "CPU_Placeholder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "CPU",
+					"sid": 438126774230361,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Placeholder",
+					"sid": 841391457655936,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "CPU",
+					"sid": 547214487918119,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "CPU_Placeholder",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 216496760183620
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "CPU_Cooler",
+					"sid": 645103800015779,
+					"parameters": {
+						"object": "CPU_Cooler_Placeholder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Cooler",
+					"sid": 327793837040298,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Cooler_Placeholder",
+					"sid": 901949290846748,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "CPU_Cooler",
+					"sid": 834616657096806,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "CPU_Cooler_Placeholder",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 114678344472659
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "RAM",
+					"sid": 206910064709389,
+					"parameters": {
+						"object": "RAM_Placeholder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "RAM",
+					"sid": 201708467130372,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Placeholder",
+					"sid": 463026951874056,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "RAM",
+					"sid": 868191202534940,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "RAM_Placeholder",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 612397760021514
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Gráfica",
+					"sid": 536392768127228,
+					"parameters": {
+						"object": "Grafica_Placeholder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Grafica_Placeholder",
+					"sid": 871091302141462,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gráfica",
+					"sid": 722751017852105,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Gráfica",
+					"sid": 628866406180653,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Grafica_Placeholder",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 859044643133407
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Fuente_Alimentación",
+					"sid": 202062195168068,
+					"parameters": {
+						"object": "Fuente_Alimentacion_Placeholder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentacion_Placeholder",
+					"sid": 778849932847188,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentación",
+					"sid": 542499895726175,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Fuente_Alimentación",
+					"sid": 417296304653897,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Fuente_Alimentacion_Placeholder",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 550213782738728
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Acabar_juego",
+					"sid": 592354082728605
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Restart",
+					"sid": 404761190170373,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FondoEnMosaico",
+					"sid": 932667358005083,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Titulo_GAME1",
+					"sid": 705860566937512,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Aciertos",
+					"sid": 650981826976406,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Contador",
+					"sid": 686869528068342,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPE_Cooler_Pregunta",
+					"sid": 816201650089669,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Cooler_Solucion",
+					"sid": 737755617507374,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_pregunta",
+					"sid": 720581372782103,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Solucion",
+					"sid": 195719361866994,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentacion_Solucion",
+					"sid": 954034367001531,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentación_Pregunta",
+					"sid": 218176971907430,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Grafica_Solucion",
+					"sid": 687766762395227,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gráfica_pregunta",
+					"sid": 967946486020628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_base_pregunta",
+					"sid": 743664247425299,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_Base_Solucion",
+					"sid": 953931985996627,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Pregunta",
+					"sid": 602283890344261,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Solucion",
+					"sid": 962121701658330,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Acabar_juego",
+					"sid": 663149974173475,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 372150658687252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Restart",
+					"sid": 885757623770689
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FondoEnMosaico",
+					"sid": 332415981717654,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Restart",
+					"sid": 631018774801889,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Aciertos",
+					"sid": 745419718944635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Contador",
+					"sid": 762717705189559,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPE_Cooler_Pregunta",
+					"sid": 221724316400071,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Cooler_Solucion",
+					"sid": 236898135260761,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_pregunta",
+					"sid": 152373565201651,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Solucion",
+					"sid": 215593910131528,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentacion_Solucion",
+					"sid": 799286842575144,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentación_Pregunta",
+					"sid": 707250451593029,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Grafica_Solucion",
+					"sid": 407529936776410,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gráfica_pregunta",
+					"sid": 675031009557234,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_base_pregunta",
+					"sid": 389667028051116,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_Base_Solucion",
+					"sid": 520588907388331,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Pregunta",
+					"sid": 185861704055928,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Solucion",
+					"sid": 743524935901171,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Cooler_Placeholder",
+					"sid": 769409405305192,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "CPU_Placeholder",
+					"sid": 838650231679620,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fuente_Alimentacion_Placeholder",
+					"sid": 565278684926001,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Grafica_Placeholder",
+					"sid": 944885541439714,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Placa_Base_Placeholder",
+					"sid": 517943480603332,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "RAM_Placeholder",
+					"sid": 808444693741897,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Titulo_GAME1",
+					"sid": 766754534102635,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 230470885677232
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Acabar_juego",
+					"sid": 769180216315013,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 242150689637447,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 356999388558093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "CPU",
+					"sid": 553100055428264,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 229615368354819,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 589627028868846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "CPU_Cooler",
+					"sid": 575753691912812,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 104361620459003,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 783123355109925
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Fuente_Alimentación",
+					"sid": 422907128823702,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 762437438694091,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 229314577713463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Gráfica",
+					"sid": 441919957405692,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 807228179811823,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 251794995602764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Placa_Base",
+					"sid": 667511498613120,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 234424852276118,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 207659386075294
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "RAM",
+					"sid": 263988978212644,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 759576508104497,
+					"parameters": {
+						"variable": "Puntaje",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 819969059953736
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 578826539731593,
+					"parameters": {
+						"variable": "Puntaje",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Acabar_juego",
+					"sid": 317079239488005,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 983582802611462
+		}
+	],
+	"sid": 253669405769448
+}

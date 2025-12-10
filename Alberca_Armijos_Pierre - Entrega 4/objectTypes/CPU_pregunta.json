@@ -1,0 +1,9 @@
+{
+	"name": "CPU_pregunta",
+	"plugin-id": "TextBox",
+	"sid": 832168878525632,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

@@ -1,0 +1,9 @@
+{
+	"name": "Fuente_Alimentación_Pregunta",
+	"plugin-id": "TextBox",
+	"sid": 460101290232234,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}
